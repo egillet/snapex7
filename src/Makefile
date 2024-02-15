@@ -34,7 +34,7 @@ ifeq ($(shell uname -s),Linux)
 OS 				:=linux
 Libs			:= $(LibrarySwitch)pthread $(LibrarySwitch)rt 
 LibExt      	:=so
-ifeq ($(shell uname -m), $(filter $(shell uname -m),x86_64 i386))   
+ifeq ($(shell uname -m), $(filter $(shell uname -m),x86_64 i386 arm64))   
 TargetCPU  		:=$(shell uname -m)
 else  
 $(error processor not supported $(shell uname -m || echo))
@@ -44,7 +44,7 @@ else ifeq ($(shell uname -s ), Darwin)
 OS 				:=osx
 Libs 			:= $(LibrarySwitch)pthread
 LibExt			:=dylib
-ifeq ($(shell uname -m), $(filter $(shell uname -m),x86_64 i386))   
+ifeq ($(shell uname -m), $(filter $(shell uname -m),x86_64 i386 arm64))   
 TargetCPU  		:=$(shell uname -m)
 else  
 $(error processor not supported $(shell uname -m || echo))
