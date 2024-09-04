@@ -1,4 +1,4 @@
-efmodule Snapex7.MixProject do
+defmodule Snapex7.MixProject do
   use Mix.Project
 
   def project do
