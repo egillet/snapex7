@@ -9,7 +9,7 @@ defmodule Snapex7.MixProject do
       name: "Snapex7",
       description: description(),
       package: package(),
-      source_url: "https://github.com/valiot/snapex7",
+      source_url: "https://github.com/egillet/snapex7",
       compilers: [:elixir_make] ++ Mix.compilers(),
       make_targets: ["all"],
       make_clean: ["clean"],
@@ -20,7 +20,6 @@ defmodule Snapex7.MixProject do
       docs: [extras: ["README.md"], main: "readme"],
       start_permanent: Mix.env() == :prod,
       build_embedded: true,
-
       deps: deps()
     ]
   end
@@ -105,7 +104,7 @@ defmodule Snapex7.MixProject do
       ],
       maintainers: ["valiot"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/valiot/snapex7"}
+      links: %{"GitHub" => "https://github.com/egillet/snapex7"}
     ]
   end
 
@@ -113,7 +112,7 @@ defmodule Snapex7.MixProject do
   defp deps do
     [
       {:elixir_make, "~> 0.5", runtime: false},
-      {:ex_doc, "~> 0.24", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.24", only: :dev, runtime: false}
     ]
   end
 end
