@@ -1,4 +1,4 @@
-defmodule Snapex7.MixProject do
+efmodule Snapex7.MixProject do
   use Mix.Project
 
   def project do
@@ -102,7 +102,7 @@ defmodule Snapex7.MixProject do
         "README.md",
         "LICENSE"
       ],
-      maintainers: ["valiot"],
+      maintainers: ["egillet"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/egillet/snapex7"}
     ]
