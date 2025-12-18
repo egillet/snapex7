@@ -34,7 +34,7 @@ ifeq ($(shell uname -s),Linux)
 OS 				:=linux
 Libs			:= $(LibrarySwitch)pthread $(LibrarySwitch)rt 
 LibExt      	:=so
-ifeq ($(shell uname -m), $(filter $(shell uname -m),x86_64 i386 arm64))   
+ifeq ($(shell uname -m), $(filter $(shell uname -m),x86_64 i386 arm64 aarch64))   
 TargetCPU  		:=$(shell uname -m)
 else  
 $(error processor not supported $(shell uname -m || echo))
